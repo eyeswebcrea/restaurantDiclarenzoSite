@@ -72,10 +72,10 @@ h2.titre:first-letter {
 }
 
 .details h2.block-title {
-	font-size: 35px;
+	font-size: 31px;
 }
 
-div.patespizza-list div.patespizza-item:hover h2.block-title {
+div.patespizza-list div.patespizza-item:hover h2.block-title, div.specialitespoissons-list div.specialitespoissons-item:hover h2.block-title {
 	background: red;
 }
 
@@ -140,6 +140,7 @@ div.ardoise-list {
 
 div.ardoise-list h2.titre {
 	background-image: url("/css/images/bg-titre-ardoiselist.png");
+	background-color: #75307e;
 	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 10px;

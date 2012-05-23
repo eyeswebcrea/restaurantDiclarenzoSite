@@ -1,6 +1,6 @@
 body {
 	background-color: #36264b;
-	background-image: url("http://download.fotolia.com/Content/CompImage/FotoliaComp_37741478_PGypRJvflqUGs0Fa44xPYhxhZNBFELMT");
+	background-image: url("/css/images/fotolia_37741478.jpg");
 
 	background-position: top;
 	color: white;
@@ -16,7 +16,7 @@ h2 {
 
 h2.titre {
 	font-family: 'Great Vibes', cursive;
-	font-size: 35px;
+	font-size: 33px;
 	text-shadow: 1px 1px 1px gray;
 }
 
@@ -119,6 +119,8 @@ div#header div.menu li a {
 	-webkit-border-bottom-left-radius: 45px 15px;
 	background: #D10B00;
 	margin: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
 	border-bottom: solid white 2px;
 		
 }
