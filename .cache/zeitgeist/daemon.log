@@ -1,0 +1,26 @@
+3252 [2012-04-18 15:44:13,804] - DEBUG - singleton - Checking for another running instance...
+3252 [2012-04-18 15:44:13,833] - INFO - zeitgeist.sql - Using database: /var/www/sites_symfony/applications/restaurantdiclarenzo.com/.local/share/zeitgeist/activity.sqlite
+3252 [2012-04-18 15:44:13,834] - DEBUG - zeitgeist.sql - Updating sql schema
+3252 [2012-04-18 15:44:15,805] - INFO - zeitgeist.sql - DB set up in 1972.26786613ms
+3252 [2012-04-18 15:44:15,807] - DEBUG - zeitgeist.extension - Searching for system extensions in: /usr/share/zeitgeist/_zeitgeist/engine/extensions
+3252 [2012-04-18 15:44:15,808] - DEBUG - zeitgeist.extension - Searching for user extensions in: /var/www/sites_symfony/applications/restaurantdiclarenzo.com/.local/share/zeitgeist/extensions
+3252 [2012-04-18 15:44:15,971] - DEBUG - zeitgeist.extension - No extra extensions
+3252 [2012-04-18 15:44:15,971] - DEBUG - zeitgeist.extension - Found extensions: [<class '_zeitgeist.engine.extensions.storagemonitor.StorageMonitor'>, <class '_zeitgeist.engine.extensions.datasource_registry.DataSourceRegistry'>, <class '_zeitgeist.engine.extensions.blacklist.Blacklist'>, <class '_zeitgeist.engine.extensions.fts.SearchEngineExtension'>]
+3252 [2012-04-18 15:44:15,972] - DEBUG - zeitgeist.extension - Loading extension 'StorageMonitor'
+3252 [2012-04-18 15:44:15,991] - DEBUG - zeitgeist.storagemonitor - Setting storage medium CDROM 'CDROM' as available
+3252 [2012-04-18 15:44:16,035] - DEBUG - zeitgeist.storagemonitor - Creating NetworkManager network monitor
+3252 [2012-04-18 15:44:16,040] - DEBUG - zeitgeist.storagemonitor - NetworkManager network state: 70
+3252 [2012-04-18 15:44:16,041] - DEBUG - zeitgeist.storagemonitor - Setting storage medium net 'Internet' as available
+3252 [2012-04-18 15:44:16,147] - DEBUG - zeitgeist.extension - Loading extension 'DataSourceRegistry'
+3252 [2012-04-18 15:44:16,148] - DEBUG - zeitgeist.datasource_registry - No existing data-source data found.
+3252 [2012-04-18 15:44:16,149] - DEBUG - zeitgeist.extension - Loading extension 'Blacklist'
+3252 [2012-04-18 15:44:16,149] - DEBUG - zeitgeist.blacklist - No existing blacklist config found
+3252 [2012-04-18 15:44:16,149] - DEBUG - zeitgeist.extension - Loading extension 'SearchEngineExtension'
+3252 [2012-04-18 15:44:16,149] - DEBUG - zeitgeist.fts - Opening full text index: /var/www/sites_symfony/applications/restaurantdiclarenzo.com/.local/share/zeitgeist/fts.index
+3252 [2012-04-18 15:44:16,486] - INFO - root - Trying to start the datahub
+3252 [2012-04-18 15:44:16,492] - DEBUG - root - Running datahub (/usr/bin/zeitgeist-datahub) with PID=3255
+3252 [2012-04-18 15:44:16,492] - INFO - root - Starting Zeitgeist service...
+3252 [2012-04-18 15:44:16,502] - INFO - zeitgeist.fts - Index must be upgraded. Doing full rebuild
+3252 [2012-04-18 15:44:16,503] - DEBUG - zeitgeist.engine - Found 0 events in 0.000488s
+3252 [2012-04-18 15:44:16,640] - INFO - zeitgeist.fts - Preparing to rebuild index with 0 events
+3252 [2012-04-18 15:44:17,141] - DEBUG - zeitgeist.fts - Committing FTS index

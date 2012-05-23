@@ -1,0 +1,398 @@
+{% extends "::base.html.twig" %}
+
+
+{% block stylesheets %}
+		{{ parent() }}
+	    {% 
+        		stylesheets output='css/lacarte.css' 
+        		'@SiteHomeBundle/Resources/public/css/lacarte.css'
+        %}        		
+        	<link rel="stylesheet" href="{{ asset_url }}" type="text/css" media="screen" />
+        {% endstylesheets %}
+{% endblock %}
+
+{% block javascripts %}	
+		{{ parent() }}
+        {%
+        	javascripts output='js/lacarte.js'
+        	'@SiteHomeBundle/Resources/public/js/lacarte.js'
+        %}
+        	<script type="text/javascript" src="{{ asset_url }}"></script>
+        {% endjavascripts %}
+{% endblock %}
+
+{% block body %}
+ <div class="span-22 prepend-1 prepend-top" id="nos-pizza">
+ 				{% for rubrique in boucleRubriques({"idRubrique" : 6}) %}
+   					<h2 class="titre text-center">{{ rubrique.getTitre() }}</h2>
+   				{% endfor %}
+		
+   		<div class="span-22 menu-list">
+   		{% for pizza in boucleRubriques({"idParent" : 6}) %}
+   			{% for menu in boucleArticles({"idRubrique" : pizza.getIdRubrique() }, { "titre" : "ASC" }) %}
+   				<div class="block menu-item span-22 block {% if loop.index % 2 == 0 %}paire{% else %}impaire{% endif %}" id="menu-item-{{ loop.index}}">
+   					<h2 class="block-title">{{ menu.getTitre() }}</h2>
+   					<div class="block-content">
+   						{{ menu.getTexte() | raw }}
+   					</div>
+   				</div>
+   			{% endfor %}
+   		{% endfor %}
+   		</div>
+		
+ </div>
+<div class="span-22 prepend-1 prepend-top" id="nos-pates">
+ 				{% for rubrique in boucleRubriques({"idRubrique" : 5}) %}
+   					<h2 class="titre text-center">{{ rubrique.getTitre() }} <img src="{{ image(rubrique.getPathAbsoluteLocalLogo()).forceResize(300,100) }}" alt="{{ rubrique.getTitre() }}"></h2>
+   					<p class="garniture"> {{ rubrique.getTexte() | raw }} </p>
+   				{% endfor %}
+
+   		<div class="span-22 menu-list">
+   			{% for pates in boucleRubriques({"idParent" : 5}) %}
+   				{% for menu in boucleArticles({"idRubrique" : pates.getIdRubrique() }, { "titre" : "ASC" }) %}
+   					<div class="block menu-item span-22 block   {% if loop.index % 2 == 0 %}paire{% else %}impaire{% endif %}" id="menu-item-{{ loop.index}}">
+   						<h2 class="block-title">{{ menu.getTitre() }}</h2>
+   						<div class="block-content">
+   						{{ menu.getTexte() | raw }}
+   						</div>
+   					</div>
+   				{% endfor %}	
+   			{% endfor %}
+   			
+   		</div>
+   		<div class="span-4 last">
+   			
+   		</div>
+ </div> 
+ <div class="span-22 prepend-1 prepend-top" id="nos-poissons">
+ 				{% for rubrique in boucleRubriques({"idRubrique" : 7}) %}
+   					<h2 class="titre text-center">{{ rubrique.getTitre() }} <img src="{{ image(rubrique.getPathAbsoluteLocalLogo()).forceResize(300,100) }}" alt="{{ rubrique.getTitre() }}"></h2>
+   				{% endfor %}
+
+   		<div class="span-22 menu-list">
+   			{% for menu in boucleArticles({"idRubrique" : 7}, { "titre" : "ASC" }) %}
+   				<div class="block menu-item span-22 block   {% if loop.index % 2 == 0 %}paire{% else %}impaire{% endif %}" id="menu-item-{{ loop.index}}">
+   					<h2 class="block-title">{{ menu.getTitre() }}</h2>
+   					<div class="block-content">
+   						{{ menu.getTexte() | raw }}
+   					</div>
+   				</div>
+   			{% endfor %}
+   			
+   		</div>
+   		<div class="span-4 last">
+   			
+   		</div>
+ </div> 
+ 
+ <div class="span-22 prepend-1 prepend-top" id="ardoisesemaine">
+ 				{% for rubrique in boucleRubriques({"idRubrique" : 13}) %}
+   					<h2 class="titre text-center">{{ rubrique.getTitre() }}</h2>
+   				{% endfor %}
+
+   		<div class="span-22 menu-list">
+   			{% for menu in boucleArticles({"idRubrique" : 13}, { "titre" : "ASC" }) %}
+   				<div class="block menu-item span-22 block   {% if loop.index % 2 == 0 %}paire{% else %}impaire{% endif %}" id="menu-item-{{ loop.index}}">
+   					
+   					<div class="block-content">
+   						
+   						<img src="{{ image(menu.getPathAbsoluteLocalLogo()).resize(800,1080) }}" alt="{{ menu.getTitre() }}">
+   						{{ menu.getTexte() | raw | nl2br }}
+   					</div>
+   				</div>
+   			{% endfor %}
+   			
+   		</div>
+   		<div class="span-4 last">
+   			
+   		</div>
+ </div> 
+ <div class="span-22 prepend-1 prepend-top" id="cartedesvins">
+ 				{% for rubrique in boucleRubriques({"idRubrique" : 10}) %}
+   					<h2 class="titre text-center">{{ rubrique.getTitre() }} <img src="{{ image(rubrique.getPathAbsoluteLocalLogo()).forceResize(300,100) }}" alt="{{ rubrique.getTitre() }}"></h2>
+   				{% endfor %}
+
+   		<div class="span-22 menu-list">
+   				{% for rubrique in boucleRubriques({"idRubrique" : 38}) %}
+   					<h2 class="titre text-center">{{ rubrique.getTitre() }}</h2>
+   				{% endfor %}
+   				
+   				<div class="block menu-item span-22 impaire">
+   					<h2 class="block-title"></h2>
+   					<div class="block-content">
+   						<ul><li><strong> Demi bouteille </strong></li><li><strong>Bouteille</strong></li></ul>
+   						&nbsp;
+   					</div>
+   				</div>
+   			{% for menu in boucleArticles({"idRubrique" : 38}, { "titre" : "ASC" }) %}
+   				<div class="block menu-item span-22 block   {% if loop.index % 2 == 0 %}paire{% else %}impaire{% endif %}" id="menu-item-{{ loop.index}}">
+   					<h2 class="block-title">{{ menu.getTitre() }}</h2>
+   					<div class="block-content">
+   						{{ menu.getTexte() | raw }}
+   					</div>
+   				</div>
+   			{% endfor %}
+   			
+   		</div>
+   		<div class="span-22 menu-list">
+   				{% for rubrique in boucleRubriques({"idRubrique" : 39}) %}
+   					<h2 class="titre text-center">{{ rubrique.getTitre() }}</h2>
+   				{% endfor %}
+   				  <div class="block menu-item span-22 impaire">
+   					<h2 class="block-title"></h2>
+   					<div class="block-content">
+   						<ul><li><strong> Demi bouteille </strong></li><li><strong>Bouteille</strong></li></ul>
+   						&nbsp;
+   					</div>
+   				</div>
+   			{% for menu in boucleArticles({"idRubrique" : 39}, { "titre" : "ASC" }) %}
+   				<div class="block menu-item span-22 block   {% if loop.index % 2 == 0 %}paire{% else %}impaire{% endif %}" id="menu-item-{{ loop.index}}">
+   					<h2 class="block-title">{{ menu.getTitre() }}</h2>
+   					<div class="block-content">
+   						{{ menu.getTexte() | raw }}
+   					</div>
+   				</div>
+   			{% endfor %}
+   			
+   		</div>
+   		<div class="span-22 menu-list">
+   				{% for rubrique in boucleRubriques({"idRubrique" : 40}) %}
+   					<h2 class="titre text-center">{{ rubrique.getTitre() }}</h2>
+   				{% endfor %}
+   				<div class="block menu-item span-22 impaire">
+   					<h2 class="block-title"></h2>
+   					<div class="block-content">
+   						<ul><li><strong> Demi bouteille </strong></li><li><strong>Bouteille</strong></li></ul>
+   						&nbsp;
+   					</div>
+   				</div>
+   			{% for menu in boucleArticles({"idRubrique" : 40}, { "titre" : "ASC" }) %}
+   				<div class="block menu-item span-22 block   {% if loop.index % 2 == 0 %}paire{% else %}impaire{% endif %}" id="menu-item-{{ loop.index}}">
+   					<h2 class="block-title">{{ menu.getTitre() }}</h2>
+   					<div class="block-content">
+   						{{ menu.getTexte() | raw }}
+   					</div>
+   				</div>
+   			{% endfor %}
+   			
+   		</div>
+   		<div class="span-22 menu-list">
+   				{% for rubrique in boucleRubriques({"idRubrique" : 41}) %}
+   					<h2 class="titre text-center">{{ rubrique.getTitre() }}</h2>
+   				{% endfor %}
+   				<div class="block menu-item span-22 impaire">
+   					<h2 class="block-title"></h2>
+   					<div class="block-content">
+   						<ul><li><strong> Demi bouteille </strong></li><li><strong>Bouteille</strong></li></ul>
+   						&nbsp;
+   					</div>
+   				</div>
+   			{% for menu in boucleArticles({"idRubrique" : 41}, { "titre" : "ASC" }) %}  			
+   				<div class="block menu-item span-22 block   {% if loop.index % 2 == 0 %}paire{% else %}impaire{% endif %}" id="menu-item-{{ loop.index}}">
+   					<h2 class="block-title">{{ menu.getTitre() }}</h2>
+   					<div class="block-content">
+   						{{ menu.getTexte() | raw }}
+   					</div>
+   				</div>
+   			{% endfor %}
+   			
+   		</div>
+   		<div class="span-22 menu-list">
+   				{% for rubrique in boucleRubriques({"idRubrique" : 42}) %}
+   					<h2 class="titre text-center">{{ rubrique.getTitre() }}</h2>
+   				{% endfor %}
+   				<div class="block menu-item span-22 impaire">
+   					<h2 class="block-title"></h2>
+   					<div class="block-content">
+   						<ul><li><strong> Demi bouteille </strong></li><li><strong>Bouteille</strong></li></ul>
+   						&nbsp;
+   					</div>
+   				</div>
+   			{% for menu in boucleArticles({"idRubrique" : 42}, { "titre" : "ASC" }) %}
+   				<div class="block menu-item span-22 block   {% if loop.index % 2 == 0 %}paire{% else %}impaire{% endif %}" id="menu-item-{{ loop.index}}">
+   					<h2 class="block-title">{{ menu.getTitre() }}</h2>
+   					<div class="block-content">
+   						{{ menu.getTexte() | raw }}
+   					</div>
+   				</div>
+   			{% endfor %}
+   			
+   		</div>
+   		<div class="span-22 menu-list">	
+   				{% for rubrique in boucleRubriques({"idRubrique" : 43}) %}
+   					<h2 class="titre text-center">{{ rubrique.getTitre() }}</h2>
+   				{% endfor %}
+   				<div class="block menu-item span-22 impaire">
+   					<h2 class="block-title"></h2>
+   					<div class="block-content">
+   						<ul><li><strong> Demi bouteille </strong></li><li><strong>Bouteille</strong></li></ul>
+   						&nbsp;
+   					</div>
+   				</div>
+   			{% for menu in boucleArticles({"idRubrique" : 43}, { "titre" : "ASC" }) %}
+   				<div class="block menu-item span-22 block   {% if loop.index % 2 == 0 %}paire{% else %}impaire{% endif %}" id="menu-item-{{ loop.index}}">
+   					<h2 class="block-title">{{ menu.getTitre() }}</h2>
+   					<div class="block-content">
+   						{{ menu.getTexte() | raw }}
+   					</div>
+   				</div>
+   			{% endfor %}
+   			
+   		</div>
+   		
+   		<div class="span-4 last">
+   			
+   		</div>
+ </div> 
+ 
+ <div class="span-22 prepend-1 prepend-top" id="coktailsaperitisa">
+ 				{% for rubrique in boucleRubriques({"idRubrique" : 11}) %}
+   					<h2 class="titre text-center">{{ rubrique.getTitre() }} <img src="{{ image(rubrique.getPathAbsoluteLocalLogo()).forceResize(300,100) }}" alt="{{ rubrique.getTitre() }}"></h2>
+   				{% endfor %}
+
+   		<div class="span-22 menu-list">
+   			{% for aperitif in boucleRubriques({"idParent" : 11}) %}
+   				{% for menu in boucleArticles({"idRubrique" : aperitif.getIdRubrique() }, { "titre" : "ASC" }) %}
+   					<div class="block menu-item span-22 block   {% if loop.index % 2 == 0 %}paire{% else %}impaire{% endif %}" id="menu-item-{{ loop.index}}">
+   						<h2 class="block-title">{{ menu.getTitre() }}</h2>
+   						<div class="block-content">
+   						{{ menu.getTexte() | raw }}
+   						</div>
+   					</div>
+   				{% endfor %}
+   			{% endfor %}
+   			
+   		</div>
+   		<div class="span-4 last">
+   			
+   		</div>
+ </div> 
+ <div class="span-22 prepend-1 prepend-top" id="nos-plats">
+ 				{% for rubrique in boucleRubriques({"idRubrique" : 31}) %}
+   					<h2 class="titre text-center">{{ rubrique.getTitre() }} <img src="{{ image(rubrique.getPathAbsoluteLocalLogo()).forceResize(300,100) }}" alt="{{ rubrique.getTitre() }}"></h2>
+   				{% endfor %}
+
+   		<div class="span-22 menu-list">
+   			{% for plat in boucleRubriques({"idParent" : 31}) %}
+   				{% for menu in boucleArticles({"idRubrique" : plat.getIdRubrique() }, { "titre" : "ASC" }) %}
+   					<div class="block menu-item span-22 block   {% if loop.index % 2 == 0 %}paire{% else %}impaire{% endif %}" id="menu-item-{{ loop.index}}">
+   						<h2 class="block-title">{{ menu.getTitre() }}</h2>
+   						<div class="block-content">
+   						{{ menu.getTexte() | raw }}
+   						</div>
+   					</div>
+   				{% endfor %}
+   			{% endfor %}
+   		</div>
+   		<div class="span-4 last">
+   			
+   		</div>
+ </div> 
+ 
+ 
+ <div class="span-22 prepend-1 prepend-top" id="nos-salades-entrees-charcuterie">
+ 				{% for rubrique in boucleRubriques({"idRubrique" : 14}) %}
+   					<h2 class="titre text-center">{{ rubrique.getTitre() }} <img src="{{ image(rubrique.getPathAbsoluteLocalLogo()).forceResize(300,100) }}" alt="{{ rubrique.getTitre() }}"></h2>
+   				{% endfor %}
+
+   		<div class="span-22 menu-list">
+   			{% for rubrique in boucleRubriques({"idRubrique" : 25}) %}
+   					<h2 class="titre text-center">{{ rubrique.getTitre() }}</h2>
+   			{% endfor %}
+   			{% for menu in boucleArticles({"idRubrique" : 25}, { "titre" : "ASC" }) %}
+   				<div class="block menu-item span-22 block   {% if loop.index % 2 == 0 %}paire{% else %}impaire{% endif %}" id="menu-item-{{ loop.index}}">
+   					<h2 class="block-title">{{ menu.getTitre() }}</h2>
+   					<div class="block-content">
+   						{{ menu.getTexte() | raw }}
+   					</div>
+   				</div>
+   			{% endfor %}
+   			
+   		</div>
+   		<div class="span-22 menu-list">
+   			{% for rubrique in boucleRubriques({"idRubrique" : 26}) %}
+   					<h2 class="titre text-center">{{ rubrique.getTitre() }}</h2>
+   			{% endfor %}
+   			{% for menu in boucleArticles({"idRubrique" : 26}, { "titre" : "ASC" }) %}
+   				<div class="block menu-item span-22 block   {% if loop.index % 2 == 0 %}paire{% else %}impaire{% endif %}" id="menu-item-{{ loop.index}}">
+   					<h2 class="block-title">{{ menu.getTitre() }}</h2>
+   					<div class="block-content">
+   						{{ menu.getTexte() | raw }}
+   					</div>
+   				</div>
+   			{% endfor %}
+   			
+   		</div>
+   		<div class="span-22 menu-list">
+   			{% for rubrique in boucleRubriques({"idRubrique" : 27}) %}
+   					<h2 class="titre text-center">{{ rubrique.getTitre() }}</h2>
+   			{% endfor %}
+   			{% for menu in boucleArticles({"idRubrique" : 27}, { "titre" : "ASC" }) %}
+   				<div class="block menu-item span-22 block   {% if loop.index % 2 == 0 %}paire{% else %}impaire{% endif %}" id="menu-item-{{ loop.index}}">
+   					<h2 class="block-title">{{ menu.getTitre() }}</h2>
+   					<div class="block-content">
+   						{{ menu.getTexte() | raw }}
+   					</div>
+   				</div>
+   			{% endfor %}
+   			
+   		</div>
+   		<div class="span-22 menu-list">
+   			{% for rubrique in boucleRubriques({"idRubrique" : 28}) %}
+   					<h2 class="titre text-center">{{ rubrique.getTitre() }}</h2>
+   			{% endfor %}
+   			{% for menu in boucleArticles({"idRubrique" : 28}, { "titre" : "ASC" }) %}
+   				<div class="block menu-item span-22 block   {% if loop.index % 2 == 0 %}paire{% else %}impaire{% endif %}" id="menu-item-{{ loop.index}}">
+   					<h2 class="block-title">{{ menu.getTitre() }}</h2>
+   					<div class="block-content">
+   						{{ menu.getTexte() | raw }}
+   					</div>
+   				</div>
+   			{% endfor %}
+   			
+   		</div>
+   		
+   		<div class="span-22 menu-list">
+   			{% for rubrique in boucleRubriques({"idRubrique" : 29}) %}
+   					<h2 class="titre text-center">{{ rubrique.getTitre() }}</h2>
+   			{% endfor %}
+   			{% for menu in boucleArticles({"idRubrique" : 29}, { "titre" : "ASC" }) %}
+   				<div class="block menu-item span-22 block   {% if loop.index % 2 == 0 %}paire{% else %}impaire{% endif %}" id="menu-item-{{ loop.index}}">
+   					<h2 class="block-title">{{ menu.getTitre() }}</h2>
+   					<div class="block-content">
+   						{{ menu.getTexte() | raw }}
+   					</div>
+   				</div>
+   			{% endfor %}
+   			
+   		</div>
+   		<div class="span-4 last">
+   			
+   		</div>
+ </div> 
+ <div class="span-22 prepend-1 prepend-top append-bottom" id="nos-viandes-grillees">
+ 				{% for rubrique in boucleRubriques({"idRubrique" : 44}) %}
+   					<h2 class="titre text-center">{{ rubrique.getTitre() }} <img src="{{ image(rubrique.getPathAbsoluteLocalLogo()).forceResize(300,100) }}" alt="{{ rubrique.getTitre() }}"></h2>
+   					<p class="garniture"> {{ rubrique.getTexte() | raw }} </p>
+   				{% endfor %}
+   				
+
+   		<div class="span-22 menu-list">
+   			{% for menu in boucleArticles({"idRubrique" : 44}, { "titre" : "ASC" }) %}
+   				<div class="block menu-item span-22 block   {% if loop.index % 2 == 0 %}paire{% else %}impaire{% endif %}" id="menu-item-{{ loop.index}}">
+   					<h2 class="block-title">{{ menu.getTitre() }}</h2>
+   					<div class="block-content">
+   						{{ menu.getTexte() | raw }}
+   					</div>
+   				</div>
+   			{% endfor %}
+   			
+   		</div>
+   		<div class="span-4 last">
+   			
+   		</div>
+ </div> 
+ 
+ 
+ 
+{% endblock %}

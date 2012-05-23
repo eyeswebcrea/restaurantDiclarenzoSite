@@ -1,0 +1,116 @@
+
+{% extends "::base.html.twig" %}
+
+
+{% block stylesheets %}
+	    {% 
+        		stylesheets output='css/mercerie.css' 
+        		'@SiteHomeBundle/Resources/public/css/index.css'
+        %}        		
+        	<link rel="stylesheet" href="{{ asset_url }}" type="text/css" media="screen" />
+        {% endstylesheets %}
+{% endblock %}
+
+{% block body %}
+
+
+
+   <div class="span-24 block block-10-line">
+   	
+   	<div class="prepend-1 span-15 prepend-top append-1 " id="specialitesitalie-and-specialitespoissons">
+   		<div class="span-8 block block-8-line" id="specialitesitalie">
+   			<div class="span-8 patespizza-list block block-8-line">
+   				{% for rubrique in boucleRubriques({"idRubrique" : 4}) %}
+   					<h2 class="titre text-center">{{ rubrique.getTitre() }}</h2>
+   				{% endfor %}
+   				{% for menu in boucleRubriques({"idParent" : 4}, { "titre" : "ASC" }) %}
+		   			<a href="{{ path('SiteHomeBundle_lacarte') }}{{ menu.getDescriptif() }}">
+		   				<div class="transition-effect transition-effect-out patespizza-item span-8 prepend-top last block" id="sandwitches-item-{{ loop.index}}">
+		   					<h2 class="span-4 last block-title">{{ menu.getTitre() }}</h2>
+		   					<div class="block-content">
+		   						<img src="{{ image(menu.getPathAbsoluteLocalLogo()).resize(306,159) }}" alt="{{ menu.getTitre() }}">
+		   					</div>
+		   				</div>
+		   			</a>
+		   			<div class="clear"></div>
+   				{% endfor %}
+   				{% for menu in boucleArticles({"idRubrique" : 4}) %}
+	   				<div class="block prepend-top patespizza-details details">
+	   					<h2 class="block-title">{{ menu.getTitre() }}</h2>
+	   					<div class="block-content">
+	   						{{ menu.getTexte() }}
+	   						<a href="{{ path('SiteHomeBundle_lacarte') }}{{ menu.getUrlSite() }}">En savoir plus</a>
+	   					</div>
+	   				</div>
+   				{% endfor %}
+   			</div>
+   			
+   		</div>
+   		<div class="span-6 prepend-1 block block-8-lines last " id="specialitespoissons">
+   			<div class="span-6  specialitespoissons-list">
+   				{% for rubrique in boucleRubriques({"idRubrique" : 12}) %}
+   					<h2 class="titre text-center">{{ rubrique.getTitre() }}</h2>
+   				{% endfor %}
+   				{% for menu in boucleRubriques({"idParent" : 12}, { "titre" : "ASC" }) %}
+   					<a href="{{ path('SiteHomeBundle_lacarte') }}{{ menu.getDescriptif() }}">
+	   				<div class="transition-effect transition-effect-out  specialitespoissons-item prepend-top transition-effect span-6 last  block block-6-line showgrid" id="saladesdivers-item-{{ loop.index}}">
+	   					<h2 class="block-title">{{ menu.getTitre() }}</h2>
+	   					<div class="block-content">
+	   						<img src="{{ image(menu.getPathAbsoluteLocalLogo()).resize(226,345) }}" alt="{{ menu.getTitre() }}">
+	   					</div>
+	   				</div>
+	   				</a>
+	   				<div class="clear"></div>
+   				{% endfor %}
+   				{% for menu in boucleArticles({"idRubrique" : 12}) %}
+	   				<div class="block prepend-top specialitespoissons-details details">
+	   					<h2 class="block-title">{{ menu.getTitre() }}</h2>
+	   					<div class="block-content">
+	   						{{ menu.getTexte() }}
+	   						<a href="{{ path('SiteHomeBundle_lacarte') }}{{ menu.getUrlSite() }}">En savoir plus</a>
+	   					</div>
+	   				</div>
+   				{% endfor %}
+   			</div>
+   		</div>	
+   	</div>
+   		<div class="span-7 prepend-top  block block-8-lines last" id="ardoiseentrees">
+   			<div class="span-6  last ardoise-list">
+   				{% for rubrique in boucleRubriques({"idRubrique" : 15}) %}
+   						<h2 class="titre">{{ rubrique.getTitre() }}</h2>
+   				{% endfor %}
+   				{% for menu in boucleRubriques({"idParent" : 15}, { "titre" : "ASC" }) %}
+   					<a href="{{ path('SiteHomeBundle_lacarte') }}{{ menu.getDescriptif() }}">
+		   				<div class="ardoise-item span-3  {% if loop.index % 2 == 0 %}last{% endif %} block block-3-line" id="ardoise-item-{{ loop.index}}">
+		   					<h2 class="block-title transition-effect transition-effect-zoomtitre">{{ menu.getTitre() }}</h2>
+		   					<div class="block-content">
+		   						<img src="{{ image(menu.getPathAbsoluteLocalLogo()).forceResize(106,100) }}" alt="{{ menu.getTitre() }}">
+		   					</div>
+		   				</div>
+	   				</a>
+   				{% endfor %}
+   					   				
+   				<div class="clear"></div>
+   				{% for animation in boucleArticles({ "idArticle" : 185}) %}
+   					<a href="{{ path('SiteHomeBundle_animations') }}">
+		   				<div class="block animation" id="animation">
+		   					<h2 class="block-title transition-effect transition-effect-zoomtitre">{{ animation.getTitre() }}</h2>
+		   					<div class="block-srcshot">
+		   						<img src="{{ image(animation.getPathAbsoluteLocalLogo()).forceResize(226,100) }}" alt="{{ animation.getTitre() }}">
+		   					</div>
+		   					<div class="block-content">{{ animation.getTexte() }}</div>
+		   				</div>
+		   				<div class="clear"></div>
+	   				</a>
+   				{% endfor %}
+   			</div>
+   				
+   			
+   		</div>
+   	
+   		
+  
+   </div>
+
+
+{% endblock %}

@@ -1,0 +1,25 @@
+Migration script called on 2012-04-18 15:43:55.406615
+
+======= Migration to 3.2.0 =======
+
+ + Migration for unity mutter.
+   Current app list is: ['ubiquity-gtkui.desktop', 'nautilus-home.desktop', 'firefox.desktop', 'libreoffice-writer.desktop', 'libreoffice-calc.desktop', 'libreoffice-impress.desktop', 'ubuntu-software-center.desktop', 'ubuntuone-installer.desktop', 'gnome-control-center.desktop']
+   Candidates are: []
+ + Migration for netbook-launcher favorites.
+   Current app list is: ['ubiquity-gtkui.desktop', 'nautilus-home.desktop', 'firefox.desktop', 'libreoffice-writer.desktop', 'libreoffice-calc.desktop', 'libreoffice-impress.desktop', 'ubuntu-software-center.desktop', 'ubuntuone-installer.desktop', 'gnome-control-center.desktop']
+   Candidates are: []
+ + Migration for gnome-panel items.
+   Current app list is: ['ubiquity-gtkui.desktop', 'nautilus-home.desktop', 'firefox.desktop', 'libreoffice-writer.desktop', 'libreoffice-calc.desktop', 'libreoffice-impress.desktop', 'ubuntu-software-center.desktop', 'ubuntuone-installer.desktop', 'gnome-control-center.desktop']
+   Candidates are: []
+ + Migration for desktop items in /var/www/sites_symfony/applications/restaurantdiclarenzo.com/Bureau.
+   Current app list is: ['ubiquity-gtkui.desktop', 'nautilus-home.desktop', 'firefox.desktop', 'libreoffice-writer.desktop', 'libreoffice-calc.desktop', 'libreoffice-impress.desktop', 'ubuntu-software-center.desktop', 'ubuntuone-installer.desktop', 'gnome-control-center.desktop']
+   Candidates are: []
+======= Migration to 3.2.10 =======
+
+ + Migration for awn favorites.
+   Current app list is: ['ubiquity-gtkui.desktop', 'nautilus-home.desktop', 'firefox.desktop', 'libreoffice-writer.desktop', 'libreoffice-calc.desktop', 'libreoffice-impress.desktop', 'ubuntu-software-center.desktop', 'ubuntuone-installer.desktop', 'gnome-control-center.desktop']
+   Candidates are: []
+ + Can't migrate Cairo-Dock as /var/www/sites_symfony/applications/restaurantdiclarenzo.com/.config/cairo-dock/current_theme/launchers doesn't exist
+Migration script ended successfully
+
+

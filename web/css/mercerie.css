@@ -1,0 +1,193 @@
+span.item-titre {
+	font-family: 'Prosto One', cursive; 
+	font-weight: bold;
+	 position: absolute; 
+	 bottom: 20px; 
+	 left: 2px;
+	 width: 100%;
+
+	 padding-top: 2px; 
+	 padding-bottom: 2px; 
+	 text-align: center; 
+	 text-decoration: none; 
+	 font-size: 20px; 
+	 display: block;
+	 background: purple; 
+	 color: white;
+}
+
+span.item-titre:first-letter {
+	font-size: 25px;
+}
+
+div.item:hover  span.item-titre
+{
+	background: #C3C3C3;
+	color: purple;
+}
+
+div.item a {
+	position: relative;
+	display: block;
+}
+
+:root div.item {
+	-webkit-transition-property: all;
+  	-webkit-transition-duration: 350ms;
+  	-webkit-transition-timing-function: ease-in-out;
+  	-moz-transition-property: all;
+  	-moz-transition-duration: 350ms;
+  	-moz-transition-timing-function: ease-in-out;
+}
+
+:root div.item:hover {
+
+	-webkit-transform:scale(1.1); //Chrome, Safar
+	
+
+	-moz-transform:scale(1.1); //Chrome, Safar
+
+}
+
+div.block > a {
+	display: block;
+}
+
+:root div.item {
+	-webkit-
+}
+
+h2.titre {
+	color: white;
+	border-bottom: solid gray 2px;
+	font-weight: bold;
+}
+
+
+
+h2.titre:first-letter {
+	color: #D10B00;
+	text-shadow: 1px 1px 1px white;
+	font-size: 30px;
+}
+
+.details h2.block-title {
+	font-size: 35px;
+}
+
+div.patespizza-list div.patespizza-item:hover h2.block-title {
+	background: red;
+}
+
+div.details a {
+	display: block;
+	text-align: right;
+	font-weight: bold;
+	color: #FFF7CF;
+}
+
+div.details h2.block-title {
+	border-bottom: solid gray 2px;
+}
+
+div.patespizza-details {
+	text-align: left;
+	font-size: 25px;
+	font-family: 'Great Vibes', cursive;
+}
+div.specialitespoissons-details {
+	padding-top: 50px;
+	text-align: left;
+	font-size: 25px;
+	font-family: 'Great Vibes', cursive;
+}
+
+div.animation {
+	position: relative;
+	border: solid #E3DCB8 2px;
+}
+
+div.animation h2.block-title {
+	margin: 0px;
+	position: absolute;
+	top: 70px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+	background: #274E31;
+	width: 230px;
+	left: -2px;
+}
+
+div.animation div.block-content {
+	padding: 5px;
+	background: #E3DCB8;
+	color: #4C0400;
+}
+
+div#specialitesitalie-and-specialitespoissons {
+	
+}
+   /*	background-image: url("/css/images/bg-autre.png"); */
+div.ardoise-list {
+	background-color: #8a1900;
+	background-image: url("/css/images/bottom-ardoiselist.png");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	padding: 10px;
+	padding-bottom: 180px;
+}
+
+div.ardoise-list h2.titre {
+	background-image: url("/css/images/bg-titre-ardoiselist.png");
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: none;
+}
+
+div.ardoise-list div.ardoise-item, div.specialitespoissons-list div.specialitespoissons-item, div.patespizza-list div.patespizza-item {
+	position: relative;
+}
+
+div.ardoise-list div.ardoise-item img, div.specialitespoissons-list div.specialitespoissons-item img, div.patespizza-list div.patespizza-item img {
+	border: solid #E3DCB8 2px;
+}
+
+
+
+div.ardoise-list div.ardoise-item h2.block-title , div.specialitespoissons-list div.specialitespoissons-item h2.block-title, div.patespizza-list div.patespizza-item h2.block-title {
+	bottom: 50px;
+	width: 100%;
+	position: absolute;
+	background: #274e31;
+	text-align: center;
+	color: white;
+}
+
+div.patespizza-list div.patespizza-item h2.block-title {
+ 	bottom: 10px;
+}
+
+div.ardoise-list div.ardoise-item:hover h2.block-title , div.specialitespoissons-list div.specialitespoissons-item:hover h2.block-title {
+	color: #FFF7CF !important;	
+}
+
+div.ardoise-list div.ardoise-item {
+	overflow: hidden;
+}
+
+div.ardoise-list div.ardoise-item img {
+	border: solid #E3DCB8 2px;
+}
+
+div.ardoise-list div.ardoise-item h2.block-title {
+	font-size: 12px;
+	text-align: center;
+	font-weight: bold;
+	width: 114px;
+}
+
+div.ardoise-list div.ardoise-item h2.block-title:hover {
+	width: 110px !important;
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="panel_run_dialog" mtime="1334756635" type="string">
+		<stringvalue>disabled</stringvalue>
+	</entry>
+	<entry name="run_command_terminal" mtime="1334756635" type="string">
+		<stringvalue>&lt;Control&gt;&lt;Alt&gt;T</stringvalue>
+	</entry>
+	<entry name="panel_main_menu" mtime="1334756635" type="string">
+		<stringvalue>disabled</stringvalue>
+	</entry>
+	<entry name="show_desktop" mtime="1334756635" type="string">
+		<stringvalue>&lt;Control&gt;&lt;Alt&gt;d</stringvalue>
+	</entry>
+</gconf>

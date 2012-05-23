@@ -1,0 +1,281 @@
+Running X session wrapper
+Loading profile from /etc/profile
+Loading resource: /etc/X11/Xresources/x11-common
+Loading X session script /etc/X11/Xsession.d/10fglrx
+Loading X session script /etc/X11/Xsession.d/20x11-common_process-args
+Loading X session script /etc/X11/Xsession.d/30x11-common_xresources
+Loading X session script /etc/X11/Xsession.d/40x11-common_xsessionrc
+Loading X session script /etc/X11/Xsession.d/50_check_unity_support
+Loading X session script /etc/X11/Xsession.d/50x11-common_determine-startup
+Loading X session script /etc/X11/Xsession.d/52libcanberra-gtk3-module_add-to-gtk-modules
+Loading X session script /etc/X11/Xsession.d/52libcanberra-gtk-module_add-to-gtk-modules
+Loading X session script /etc/X11/Xsession.d/55gnome-session_gnomerc
+Loading X session script /etc/X11/Xsession.d/60x11-common_localhost
+Loading X session script /etc/X11/Xsession.d/60x11-common_xdg_path
+Loading X session script /etc/X11/Xsession.d/60xdg-user-dirs-update
+Loading X session script /etc/X11/Xsession.d/65compiz_profile-on-session
+Loading X session script /etc/X11/Xsession.d/70gconfd_path-on-session
+Loading X session script /etc/X11/Xsession.d/75dbus_dbus-launch
+Loading X session script /etc/X11/Xsession.d/80appmenu
+Loading X session script /etc/X11/Xsession.d/80appmenu-gtk3
+Loading X session script /etc/X11/Xsession.d/80im-switch
+Setting IM through im-switch for locale=fr_FR.
+Start IM through /etc/X11/xinit/xinput.d/all_ALL linked to /etc/X11/xinit/xinput.d/default.
+Loading X session script /etc/X11/Xsession.d/90consolekit
+Loading X session script /etc/X11/Xsession.d/90x11-common_ssh-agent
+Loading X session script /etc/X11/Xsession.d/99x11-common_start
+GNOME_KEYRING_CONTROL=/tmp/keyring-UJTWP4
+GNOME_KEYRING_CONTROL=/tmp/keyring-UJTWP4
+GPG_AGENT_INFO=/tmp/keyring-UJTWP4/gpg:0:1
+SSH_AUTH_SOCK=/tmp/keyring-UJTWP4/ssh
+GNOME_KEYRING_CONTROL=/tmp/keyring-UJTWP4
+GPG_AGENT_INFO=/tmp/keyring-UJTWP4/gpg:0:1
+SSH_AUTH_SOCK=/tmp/keyring-UJTWP4/ssh
+GNOME_KEYRING_CONTROL=/tmp/keyring-UJTWP4
+GPG_AGENT_INFO=/tmp/keyring-UJTWP4/gpg:0:1
+Checking if settings need to be migrated ...no
+Checking if internal files need to be migrated ...no
+Backend     : gconf
+Integration : true
+Profile     : unity
+Adding plugins
+Processing upgrade com.canonical.unity.unity.01.upgrade
+profile: unity
+number: 1
+domain: com.canonical.unity
+Initializing core options...done
+
+** (gnome-settings-daemon:3012): WARNING **: Connection failed, reconnecting...
+
+** (gnome-settings-daemon:3012): WARNING **: Failed to connect context: Connexion refusée
+Initializing expo options...done
+Initializing decor options...done
+Initializing resize options...done
+Initializing ezoom options...done
+Initializing unityshell options...done
+Initializing gtkloader options...done
+Initializing animation options...done
+Initializing composite options...done
+Initializing unitymtgrabhandles options...done
+Initializing scale options...done
+Initializing gnomecompat options...done
+Initializing wall options...done
+Initializing vpswitch options...done
+Initializing compiztoolbox options...done
+Initializing opengl options...done
+Initializing move options...done
+Initializing imgpng options...done
+Initializing detection options...done
+Initializing staticswitcher options...done
+Initializing regex options...done
+Initializing place options...done
+Initializing session options...done
+Initializing fade options...done
+Initializing snap options...done
+Initializing grid options...done
+Initializing bailer options...done
+Initializing workarounds options...done
+Initializing mousepoll options...done
+Removed 0 items from active_plugins
+Overriding value alt_tab_timeout
+Completed upgrade com.canonical.unity.unity.01.upgrade
+Processing upgrade com.canonical.unity.unity.02.upgrade
+profile: unity
+number: 2
+domain: com.canonical.unity
+Overriding value x_offset
+Overriding value y_offset
+Overriding value distance
+Overriding value vp_distance
+Overriding value vp_brightness
+Overriding value vp_saturation
+Overriding value reflection
+Completed upgrade com.canonical.unity.unity.02.upgrade
+Initializing nautilus-gdu extension
+
+(polkit-gnome-authentication-agent-1:3059): Gtk-WARNING **: Impossible de trouver le moteur de thème dans module_path : « pixmap »
+
+(polkit-gnome-authentication-agent-1:3059): Gtk-WARNING **: Impossible de trouver le moteur de thème dans module_path : « pixmap »
+
+(polkit-gnome-authentication-agent-1:3059): Gtk-WARNING **: Impossible de trouver le moteur de thème dans module_path : « pixmap »
+
+(polkit-gnome-authentication-agent-1:3059): Gtk-WARNING **: Impossible de trouver le moteur de thème dans module_path : « pixmap »
+** (gnome-fallback-mount-helper:3062): DEBUG: Starting automounting manager
+** (nautilus:3057): DEBUG: Syncdaemon not running, waiting for it to start in NameOwnerChanged
+
+(canberra-gtk-play:3063): Gtk-WARNING **: Impossible de trouver le moteur de thème dans module_path : « pixmap »
+
+(canberra-gtk-play:3063): Gtk-WARNING **: Impossible de trouver le moteur de thème dans module_path : « pixmap »
+
+(canberra-gtk-play:3063): Gtk-WARNING **: Impossible de trouver le moteur de thème dans module_path : « pixmap »
+
+(canberra-gtk-play:3063): Gtk-WARNING **: Impossible de trouver le moteur de thème dans module_path : « pixmap »
+I/O warning : failed to load external entity "/var/www/sites_symfony/applications/restaurantdiclarenzo.com/.compiz/session/108c1f250867266bfa133475662597762700000029540033"
+** (gnome-fallback-mount-helper:3062): DEBUG: Found ConsoleKit session at path /org/freedesktop/ConsoleKit/Session2
+compiz (expo) - Warn: failed to bind image to texture
+** (gnome-fallback-mount-helper:3062): DEBUG: ScreenSaver name appeared
+** (gnome-fallback-mount-helper:3062): DEBUG: ScreenSaver proxy ready
+** (gnome-fallback-mount-helper:3062): DEBUG: Screensaver GetActive() returned 0
+** (gnome-fallback-mount-helper:3062): DEBUG: ConsoleKit session is active 1
+
+(compiz:3035): GdkPixbuf-CRITICAL **: gdk_pixbuf_new: assertion `width > 0' failed
+
+(compiz:3035): GdkPixbuf-CRITICAL **: gdk_pixbuf_get_width: assertion `GDK_IS_PIXBUF (pixbuf)' failed
+
+(compiz:3035): GdkPixbuf-CRITICAL **: gdk_pixbuf_get_height: assertion `GDK_IS_PIXBUF (pixbuf)' failed
+
+(compiz:3035): GdkPixbuf-CRITICAL **: gdk_pixbuf_get_width: assertion `GDK_IS_PIXBUF (pixbuf)' failed
+
+(compiz:3035): GdkPixbuf-CRITICAL **: gdk_pixbuf_get_height: assertion `GDK_IS_PIXBUF (pixbuf)' failed
+
+(compiz:3035): GdkPixbuf-CRITICAL **: gdk_pixbuf_fill: assertion `GDK_IS_PIXBUF (pixbuf)' failed
+WARN  2012-04-18 15:43:54 unity.bghash BGHash.cpp:390 Passed in a bad pixbuf, defaulting colour
+** Message: applet now removed from the notification area
+** (nm-applet:3061): DEBUG: old state indicates that this was not a disconnect 0
+** Message: using fallback from indicator to GtkStatusIcon
+
+Screen geometry changed:
+   0x0x1920x1080
+
+unity-panel-service: aucun processus trouvé
+Starting unity-window-decorator
+DEBUG 2012-04-18 15:43:54 glib <unknown>:0 Setting to primary screen rect: x=0 y=0 w=1920 h=1080
+
+(unity-window-decorator:3119): Gtk-WARNING **: Impossible de trouver le moteur de thème dans module_path : « pixmap »
+
+(unity-window-decorator:3119): Gtk-WARNING **: Impossible de trouver le moteur de thème dans module_path : « pixmap »
+
+(unity-window-decorator:3119): Gtk-WARNING **: Impossible de trouver le moteur de thème dans module_path : « pixmap »
+
+(unity-window-decorator:3119): Gtk-WARNING **: Impossible de trouver le moteur de thème dans module_path : « pixmap »
+** Message: moving back from GtkStatusIcon to indicator
+WARN  2012-04-18 15:43:55 unity.favorites FavoriteStoreGSettings.cpp:138 Unable to load GDesktopAppInfo for 'ubiquity-gtkui.desktop'
+Setting Update "autoraise"
+Setting Update "autoraise_delay"
+Setting Update "maximize_window_key"
+Setting Update "minimize_window_key"
+Setting Update "show_desktop_key"
+Setting Update "toggle_window_maximized_key"
+Setting Update "toggle_window_shaded_key"
+Setting Update "fullscreen_visual_bell"
+Setting Update "main_menu_key"
+Setting Update "run_command_terminal_key"
+Setting Update "run_key"
+
+** (gnome-settings-daemon:3012): WARNING **: Connection failed, reconnecting...
+
+** (gnome-settings-daemon:3012): WARNING **: Failed to connect context: Connexion refusée
+** (process:3201): DEBUG: Telepathy Indicator started
+Failed to play sound: Not available
+compiz (core) - Warn: failed to receive ConfigureNotify event on 0x1600004
+
+Échec lors de la connexion : Connexion refusée
+Échec de pa_context_connect() : Connexion refusée
+WARN  2012-04-18 15:44:18 unity.glib.dbusproxy GLibDBusProxy.cpp:255 Cannot call method InfoRequest proxy /com/canonical/unity/lens/music does not exist
+WARN  2012-04-18 15:44:18 unity.glib.dbusproxy GLibDBusProxy.cpp:255 Cannot call method SetActive proxy /com/canonical/unity/lens/music does not exist
+WARN  2012-04-18 15:44:18 unity.glib.dbusproxy GLibDBusProxy.cpp:255 Cannot call method InfoRequest proxy /com/canonical/unity/lens/files does not exist
+WARN  2012-04-18 15:44:18 unity.glib.dbusproxy GLibDBusProxy.cpp:255 Cannot call method SetActive proxy /com/canonical/unity/lens/files does not exist
+WARN  2012-04-18 15:44:18 unity.glib.dbusproxy GLibDBusProxy.cpp:255 Cannot call method InfoRequest proxy /com/canonical/unity/lens/commands does not exist
+WARN  2012-04-18 15:44:18 unity.glib.dbusproxy GLibDBusProxy.cpp:255 Cannot call method SetActive proxy /com/canonical/unity/lens/commands does not exist
+WARN  2012-04-18 15:44:18 unity.glib.dbusproxy GLibDBusProxy.cpp:255 Cannot call method InfoRequest proxy /com/canonical/unity/lens/applications does not exist
+WARN  2012-04-18 15:44:18 unity.glib.dbusproxy GLibDBusProxy.cpp:255 Cannot call method SetActive proxy /com/canonical/unity/lens/applications does not exist
+WARN  2012-04-18 15:44:19 unity.iconloader IconLoader.cpp:509 Unable to load contents of file:///usr/share/icons/unity-icon-theme/places/svg/category-installed.svg: Erreur à l'ouverture du fichier : Aucun fichier ou dossier de ce type
+WARN  2012-04-18 15:44:19 unity.iconloader IconLoader.cpp:509 Unable to load contents of file:///usr/share/icons/unity-icon-theme/places/svg/category-available.svg: Erreur à l'ouverture du fichier : Aucun fichier ou dossier de ce type
+compiz (core) - Warn: no exact match for ConfigureNotify on 0x120010a!
+compiz (core) - Warn: expected the following changes:
+compiz (core) - Warn: sibling: 0x43eeb5
+compiz (core) - Warn: instead got:
+compiz (core) - Warn: x: 0
+compiz (core) - Warn: y: 0
+compiz (core) - Warn: width: 1920
+compiz (core) - Warn: height: 1080
+compiz (core) - Warn: above: 0
+compiz (core) - Warn: this should never happen. you should probably file a bug about this.
+WARN  2012-04-18 15:44:23 glib <unknown>:0 Unable to fetch children: Method "Children" with signature "" on interface "org.ayatana.bamf.view" doesn't exist
+
+
+WARN  2012-04-18 15:44:23 glib.glib-gobject <unknown>:0 instance with invalid (NULL) class pointer
+
+(applet.py:3348): Gtk-WARNING **: Impossible de trouver le moteur de thème dans module_path : « pixmap »
+
+(applet.py:3348): Gtk-WARNING **: Impossible de trouver le moteur de thème dans module_path : « pixmap »
+
+(applet.py:3348): Gtk-WARNING **: Impossible de trouver le moteur de thème dans module_path : « pixmap »
+
+(applet.py:3348): Gtk-WARNING **: Impossible de trouver le moteur de thème dans module_path : « pixmap »
+WARN  2012-04-18 15:44:27 glib <unknown>:0 Unable to fetch children: Method "Children" with signature "" on interface "org.ayatana.bamf.view" doesn't exist
+
+
+WARN  2012-04-18 15:44:27 glib.glib-gobject <unknown>:0 instance of invalid non-instantiatable type `(null)'
+** (process:3032): DEBUG: Exiting gsd-printer
+
+(nautilus:3057): GLib-GObject-CRITICAL **: g_value_get_object: assertion `G_VALUE_HOLDS_OBJECT (value)' failed
+
+(nautilus:3057): GLib-GObject-CRITICAL **: g_value_get_object: assertion `G_VALUE_HOLDS_OBJECT (value)' failed
+
+(gnome-settings-daemon:3012): GLib-GObject-CRITICAL **: g_object_unref: assertion `G_IS_OBJECT (object)' failed
+[1334756626,000,xklavier.c:xkl_engine_start_listen/] 	The backend does not require manual layout management - but it is provided by the application
+unity-window-decorator: Fatal IO error 11 (Ressource temporairement non disponible) on X server :0.0.
+
+(nautilus:3057): GLib-GObject-CRITICAL **: g_value_get_object: assertion `G_VALUE_HOLDS_OBJECT (value)' failed
+
+(nautilus:3057): GLib-GObject-CRITICAL **: g_value_get_object: assertion `G_VALUE_HOLDS_OBJECT (value)' failed
+
+(nautilus:3057): GLib-GObject-CRITICAL **: g_value_get_object: assertion `G_VALUE_HOLDS_OBJECT (value)' failed
+
+(nautilus:3057): GLib-GObject-CRITICAL **: g_value_get_object: assertion `G_VALUE_HOLDS_OBJECT (value)' failed
+
+(nautilus:3057): GLib-GObject-CRITICAL **: g_value_get_object: assertion `G_VALUE_HOLDS_OBJECT (value)' failed
+
+(nautilus:3057): GLib-GObject-CRITICAL **: g_value_get_object: assertion `G_VALUE_HOLDS_OBJECT (value)' failed
+
+(nautilus:3057): GLib-GObject-CRITICAL **: g_value_get_object: assertion `G_VALUE_HOLDS_OBJECT (value)' failed
+
+(nautilus:3057): GLib-GObject-CRITICAL **: g_value_get_object: assertion `G_VALUE_HOLDS_OBJECT (value)' failed
+
+(nautilus:3057): GLib-GObject-CRITICAL **: g_value_get_object: assertion `G_VALUE_HOLDS_OBJECT (value)' failed
+
+(nautilus:3057): GLib-GObject-CRITICAL **: g_value_get_object: assertion `G_VALUE_HOLDS_OBJECT (value)' failed
+
+(nautilus:3057): GLib-GObject-CRITICAL **: g_value_get_object: assertion `G_VALUE_HOLDS_OBJECT (value)' failed
+
+(nautilus:3057): GLib-GObject-CRITICAL **: g_value_get_object: assertion `G_VALUE_HOLDS_OBJECT (value)' failed
+
+(nautilus:3057): GLib-GObject-CRITICAL **: g_value_get_object: assertion `G_VALUE_HOLDS_OBJECT (value)' failed
+
+(nautilus:3057): GLib-GObject-CRITICAL **: g_value_get_object: assertion `G_VALUE_HOLDS_OBJECT (value)' failed
+
+(nautilus:3057): GLib-GObject-CRITICAL **: g_value_get_object: assertion `G_VALUE_HOLDS_OBJECT (value)' failed
+
+(nautilus:3057): GLib-GObject-CRITICAL **: g_value_get_object: assertion `G_VALUE_HOLDS_OBJECT (value)' failed
+
+(nautilus:3057): GLib-GObject-CRITICAL **: g_value_get_object: assertion `G_VALUE_HOLDS_OBJECT (value)' failed
+
+(nautilus:3057): GLib-GObject-CRITICAL **: g_value_get_object: assertion `G_VALUE_HOLDS_OBJECT (value)' failed
+
+(nautilus:3057): GLib-GObject-CRITICAL **: g_value_get_object: assertion `G_VALUE_HOLDS_OBJECT (value)' failed
+
+(nautilus:3057): GLib-GObject-CRITICAL **: g_value_get_object: assertion `G_VALUE_HOLDS_OBJECT (value)' failed
+
+(nautilus:3057): GLib-GObject-CRITICAL **: g_value_get_object: assertion `G_VALUE_HOLDS_OBJECT (value)' failed
+
+(nautilus:3057): GLib-GObject-CRITICAL **: g_value_get_object: assertion `G_VALUE_HOLDS_OBJECT (value)' failed
+
+(nautilus:3057): GLib-GObject-CRITICAL **: g_value_get_object: assertion `G_VALUE_HOLDS_OBJECT (value)' failed
+
+(nautilus:3057): GLib-GObject-CRITICAL **: g_value_get_object: assertion `G_VALUE_HOLDS_OBJECT (value)' failed
+
+(nautilus:3057): GLib-GObject-CRITICAL **: g_value_get_object: assertion `G_VALUE_HOLDS_OBJECT (value)' failed
+
+(nautilus:3057): GLib-GObject-CRITICAL **: g_value_get_object: assertion `G_VALUE_HOLDS_OBJECT (value)' failed
+
+(nautilus:3057): GLib-GObject-CRITICAL **: g_value_get_object: assertion `G_VALUE_HOLDS_OBJECT (value)' failed
+
+(nautilus:3057): Gdk-WARNING **: The application 'nautilus' lost its connection to the display :0;
+most likely the X server was shut down or you killed/destroyed
+the application.
+
+** (process:3246): DEBUG: zeitgeist-datahub.vala:58: Zeitgeist-daemon disappeared from the bus, exitting...
+
+** (process:3246): WARNING **: zeitgeist-datahub.vala:218: Unable to get name "org.gnome.zeitgeist.datahub" on the bus!
+g_dbus_connection_real_closed: Remote peer vanished with error: Underlying GIOStream returned 0 bytes on an async read (g-io-error-quark, 0). Exiting.

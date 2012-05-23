@@ -1,0 +1,67 @@
+.slides.slides-design-slider ul.pagination li a {
+	color: gray;
+	text-shadow: 1px 1px 1px white;
+}
+
+.slides.slides-design-slider {
+	position: relative;
+}
+
+.slides.slides-design-slider .slide-item-texte
+{
+	text-align: center;
+	background: gray;
+	padding: 5px;
+}
+
+.slides.slides-design-slider  img {
+	box-shadow: -1px 1px 5px gray;
+}
+
+.slides.slides-design-slider ul.pagination {
+	position: absolute; 
+	bottom: 60px;
+	display: block;
+	background: #CCCCC1;
+	margin: 0px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	
+	-moz-border-top-right-radius: 5px;
+	-moz-border-bottom-right-radius: 5px;
+	
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	z-index: 50;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.slides.slides-design-slider ul.pagination li a {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: 5px;
+	display: block;
+	text-decoration: none;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: white;
+	text-shadow: none;
+	font-weight: bold;
+	border-radius: 10px;
+}
+
+.slides.slides-design-slider ul.pagination li a:hover {
+	background: gray;
+}
+
+ul.pagination li {
+	float: left;
+	list-style: none;
+}
+
+

@@ -1,0 +1,134 @@
+/* qsdqsds */
+
+div#page {
+	background: #fff7cf;
+}
+
+div#body h1, div#body h2, div#body h3,div#body h4,div#body h5,div#body h6, div#body {
+	color: #4C0400;
+}
+
+div.menu-list div.menu-item {
+	position: relative;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+
+div.menu-list div.menu-item ul {
+	padding: 0px;
+	margin: 0px;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	overflow: hidden;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+/*	border: solid gray 2px; */
+}
+
+div.menu-list div.menu-item ul li
+{
+/*	background: white; */
+}
+
+div.menu-list div.menu-item ul li.paire
+{
+	
+}
+
+div.menu-list div.menu-item h2.block-title {
+	padding: 5px;
+	padding-bottom: 0px;
+}
+
+div.menu-list div.menu-item ul li {
+	float: left;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	list-style: none;
+	font-size: 16px;
+	font-weight: bold;
+	min-width: 130px;
+	min-height: 31px;
+	text-align: center;
+}
+
+div.menu-list div.menu-item ul li strong {
+	font-size: 18px;
+	background: #780600;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	color: white;
+	margin-left: 5px;
+	padding: 5px;
+	min-width: 31px;
+	min-height: 31px;
+}
+
+div.menu-list div.menu-item.paire ul li strong
+{
+	background: #4C0400;
+}
+
+
+div.menu-list div.menu-item ul li:first-letter {
+	font-size: 20px;
+}
+
+div.menu-list div.menu-item {
+	background: transparent; 
+}
+
+div.menu-list div.menu-item.paire
+{
+	background: #e3dcb8;
+	
+
+}
+
+
+div.menu-list div.menu-item h2.block-title {
+
+
+}
+
+div.menu-list div.menu-item div.block-content {
+	font-size: 18px;
+}
+
+h2.titre {
+	border-bottom: solid  #902707 2px;
+		font-weight: bold;
+	text-shadow: 0px 0px 0px black;
+}
+
+div#conteneur-bas-partie-milieu {
+	border-top: solid #902707 5px;
+}
+
+h2.titre {
+	padding-top: 80px;
+	position: relative;
+}
+
+h2.titre img {
+	border: solid #902707 5px;
+	border-bottom: none;
+	position: absolute;
+	right: 0px;
+	bottom: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	-moz-border-top-left-radius: 5px;
+	-moz-border-top-right-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+}
+p.garniture {
+	font-weight: bold;
+	font-size: 18px;
+}

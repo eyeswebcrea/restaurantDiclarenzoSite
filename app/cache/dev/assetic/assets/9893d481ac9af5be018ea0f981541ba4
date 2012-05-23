@@ -1,0 +1,6 @@
+div.block.block-1-line { height: 50px; }
+div.block.block-2-line { height: 100px; }
+div.block.block-3-line { height: 150px; }
+div.block.block-4-line { height: 200px; }
+div.block.block-5-line { height: 250px; }
+div.block.block-6-line { height: 300px; }

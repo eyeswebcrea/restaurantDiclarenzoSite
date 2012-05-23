@@ -1,0 +1,14 @@
+ul.referencement {
+	overflow: hidden;
+}
+
+ul.referencement li 
+{
+	float: left;
+	list-style: none;
+}
+
+ul.referencement li a
+{
+	color: transparent;
+}
